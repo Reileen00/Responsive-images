@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div class="row">
+            <div class="column">
+              <img src="bernhard-uTd-kylh7bE-unsplash.jpg">
+              <img src="florian-schmid-f1PzRPbqt0M-unsplash.jpg">
+            </div>
+            <div class="column">
+                <img src="pawel-czerwinski-Wuu6H3mI7UA-unsplash.jpg">
+                <img src="jasper-gribble-TTExgxV06KA-unsplash.jpg">
+            </div>
+            <div class="column">
+                <img src="jasper-gribble-TTExgxV06KA-unsplash.jpg">
+                <img src="florian-schmid-f1PzRPbqt0M-unsplash.jpg">
+            </div>      
+         </div>
+         <style>
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 4px;
+                }
+
+                .column {
+                flex: 25%;
+                max-width: 25%;
+                padding: 0 4px;
+                }
+
+                .column img {
+                margin-top: 8px;
+                vertical-align: middle;
+                width: 100%;
+                }
+                @media screen and (max-width: 800px) {
+                .column {
+                    flex: 50%;
+                    max-width: 50%;
+                }
+                }
+                @media screen and (max-width: 600px) {
+                .column {
+                    flex: 100%;
+                    max-width: 100%;
+                }
+                }
+         </style>
+    </body>
+</html>
